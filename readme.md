@@ -1,19 +1,45 @@
 Test server for testing the Flask External API feature
 
-run
+clone:
+
+git clone https://github.com/nakhaev/testserver.git
+
+run:
 
 1. npm i
 2. DEBUG=testserver:* npm start (Linux)
 3. set DEBUG=myapp:* & npm start (Windows)
 
-endpoints
+endpoints:
 
 http://localhost:3000/test/string
 
+http://localhost:3000/test/object-string
+
 http://localhost:3000/test/number
 
-http://localhost:3000/test/bipolar-number
+http://localhost:3000/test/object-number
 
 http://localhost:3000/test/date
 
-http://localhost:3000/test/bipolar-date
+http://localhost:3000/test/object-date
+
+http://localhost:3000/test/boolean-false
+
+http://localhost:3000/test/boolean-true
+
+http://localhost:3000/test/not-exist
+
+http://localhost:3000/test/array-empty
+
+http://localhost:3000/test/array
+
+http://localhost:3000/test/object-empty
+
+http://localhost:3000/test/object
+
+http://localhost:3000/test/api-error
+
+usage:
+
+set get(endpoint)[result] as the expression
