@@ -8,7 +8,7 @@ run:
 
 1. npm i
 2. DEBUG=testserver:* npm start (Linux)
-3. set DEBUG=myapp:* & npm start (Windows)
+3. set DEBUG=testserver:* & npm start (Windows)
 
 endpoints:
 
