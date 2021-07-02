@@ -71,4 +71,14 @@ router.get('/api-error', function(req, res, next) {
     res.status(500).send('API error');
 });
 
+/* GET options listing. */
+router.get('/options', function(req, res, next) {
+  res.send({result: {"FIRST": "0", "SECOND": "1", "THIRD": "2", "ELSE_ONE": "3",}});
+});
+
+/* GET options with duplicate values listing. */
+router.get('/options-duplicate', function(req, res, next) {
+  res.send({result: {"FIRST": "0", "SECOND": "1", "THIRD": "1", "ELSE_ONE": "2",}});
+});
+
 module.exports = router;
