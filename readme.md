@@ -40,6 +40,10 @@ http://localhost:3000/test/object
 
 http://localhost:3000/test/api-error
 
+http://localhost:3000/test/options
+
+http://localhost:3000/test/options-duplicate
+
 usage:
 
 set get(endpoint)[result] as the expression
