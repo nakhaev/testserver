@@ -81,4 +81,132 @@ router.get('/options-duplicate', function(req, res, next) {
   res.send({result: {"FIRST": "0", "SECOND": "1", "THIRD": "1", "ELSE_ONE": "2",}});
 });
 
+/* GET options with multilang titles listing. */
+router.get('/options-multilang', function(req, res, next) {
+  res.send({
+    result: {
+      "FIRST": {
+        "title": {
+          "ENGLISH": "title 1 en",
+          "HEBREW": "title 1 he",
+          "CHINESE": "title 1 zh",
+          "GERMAN": "title 1 de",
+          "FRENCH": "title 1 fr",
+          "SPANISH": "title 1 es",
+          "ARABIC": "title 1 ar",
+          "RUSSIAN": "title 1 ru",
+          "HINDI": "title 1 hi"
+        },
+        "value": "0"
+      }, 
+      "SECOND": {
+        "title": {
+          "ENGLISH": "title 2 en",
+          "HEBREW": "title 2 he",
+          "CHINESE": "title 2 zh",
+          "GERMAN": "title 2 de",
+          "FRENCH": "title 2 fr",
+          "SPANISH": "title 2 es",
+          "ARABIC": "title 2 ar",
+          "RUSSIAN": "title 2 ru",
+          "HINDI": "title 2 hi"
+        },
+        "value": "1"
+      }, 
+      "THIRD": {
+        "title": {
+          "ENGLISH": "title 3 en",
+          "HEBREW": "title 3 he",
+          "CHINESE": "title 3 zh",
+          "GERMAN": "title 3 de",
+          "FRENCH": "title 3 fr",
+          "SPANISH": "title 3 es",
+          "ARABIC": "title 3 ar",
+          "RUSSIAN": "title 3 ru",
+          "HINDI": "title 3 hi"
+        },
+        "value": "3"
+      }, 
+      "ELSE_ONE": {
+        "title": {
+          "ENGLISH": "title 4 en",
+          "HEBREW": "title 4 he",
+          "CHINESE": "title 4 zh",
+          "GERMAN": "title 4 de",
+          "FRENCH": "title 4 fr",
+          "SPANISH": "title 4 es",
+          "ARABIC": "title 4 ar",
+          "RUSSIAN": "title 4 ru",
+          "HINDI": "title 4 hi"
+        },
+        "value": "4"
+      }
+    }
+  });
+});
+
+/* GET options with duplicate values and multilang title listing. */
+router.get('/options-multilang-duplicate', function(req, res, next) {
+  res.send({
+    result: {
+      "FIRST": {
+        "title": {
+          "ENGLISH": "title 1 en",
+          "HEBREW": "title 1 he",
+          "CHINESE": "title 1 zh",
+          "GERMAN": "title 1 de",
+          "FRENCH": "title 1 fr",
+          "SPANISH": "title 1 es",
+          "ARABIC": "title 1 ar",
+          "RUSSIAN": "title 1 ru",
+          "HINDI": "title 1 hi"
+        },
+        "value": "0"
+      }, 
+      "SECOND": {
+        "title": {
+          "ENGLISH": "title 2 en",
+          "HEBREW": "title 2 he",
+          "CHINESE": "title 2 zh",
+          "GERMAN": "title 2 de",
+          "FRENCH": "title 2 fr",
+          "SPANISH": "title 2 es",
+          "ARABIC": "title 2 ar",
+          "RUSSIAN": "title 2 ru",
+          "HINDI": "title 2 hi"
+        },
+        "value": "1"
+      }, 
+      "THIRD": {
+        "title": {
+          "ENGLISH": "title 3 en",
+          "HEBREW": "title 3 he",
+          "CHINESE": "title 3 zh",
+          "GERMAN": "title 3 de",
+          "FRENCH": "title 3 fr",
+          "SPANISH": "title 3 es",
+          "ARABIC": "title 3 ar",
+          "RUSSIAN": "title 3 ru",
+          "HINDI": "title 3 hi"
+        },
+        "value": "1"
+      }, 
+      "ELSE_ONE": {
+        "title": {
+          "ENGLISH": "title 4 en",
+          "HEBREW": "title 4 he",
+          "CHINESE": "title 4 zh",
+          "GERMAN": "title 4 de",
+          "FRENCH": "title 4 fr",
+          "SPANISH": "title 4 es",
+          "ARABIC": "title 4 ar",
+          "RUSSIAN": "title 4 ru",
+          "HINDI": "title 4 hi"
+        },
+        "value": "4"
+      }
+    }
+  });
+});
+
 module.exports = router;
